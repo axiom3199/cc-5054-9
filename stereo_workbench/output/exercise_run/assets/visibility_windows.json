@@ -1,0 +1,364 @@
+{
+  "swap": false,
+  "safe_box": [
+    32,
+    26,
+    288,
+    230
+  ],
+  "annotations": {
+    "micro": {
+      "id": "micro",
+      "kind": "mono_micro",
+      "world_x": -24.0,
+      "world_y": 24.0,
+      "size": [
+        13,
+        11
+      ],
+      "stamped_eyes": [
+        0,
+        1
+      ],
+      "swap": false,
+      "eyes": {
+        "0": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.833,
+            0.0,
+            0.0,
+            0.167,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "visible_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "windows": [
+            [
+              0,
+              5
+            ]
+          ],
+          "stamped": true,
+          "geometric_only": false
+        },
+        "1": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "visible_frames": [
+            0,
+            1,
+            2,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "windows": [
+            [
+              0,
+              2
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "stamped": true,
+          "geometric_only": false
+        }
+      }
+    },
+    "soft": {
+      "id": "soft",
+      "kind": "shared_low_contrast",
+      "world_x": -55.0,
+      "world_y": -70.0,
+      "size": [
+        40,
+        22
+      ],
+      "stamped_eyes": [
+        0,
+        1
+      ],
+      "swap": false,
+      "eyes": {
+        "0": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "visible_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "windows": [
+            [
+              0,
+              11
+            ]
+          ],
+          "stamped": true,
+          "geometric_only": false
+        },
+        "1": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "visible_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "windows": [
+            [
+              0,
+              11
+            ]
+          ],
+          "stamped": true,
+          "geometric_only": false
+        }
+      }
+    },
+    "rtex": {
+      "id": "rtex",
+      "kind": "right_only_texture",
+      "world_x": -52.0,
+      "world_y": 2.0,
+      "size": [
+        48,
+        48
+      ],
+      "stamped_eyes": [
+        1
+      ],
+      "swap": false,
+      "eyes": {
+        "0": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "visible_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "windows": [
+            [
+              0,
+              11
+            ]
+          ],
+          "stamped": false,
+          "geometric_only": true
+        },
+        "1": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "visible_frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "windows": [
+            [
+              0,
+              11
+            ]
+          ],
+          "stamped": true,
+          "geometric_only": false
+        }
+      }
+    }
+  },
+  "correspondence": [
+    [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "t_ms": 0
+    },
+    {
+      "frame": 1,
+      "t_ms": 167
+    },
+    {
+      "frame": 2,
+      "t_ms": 333
+    },
+    {
+      "frame": 3,
+      "t_ms": 500
+    },
+    {
+      "frame": 4,
+      "t_ms": 667
+    },
+    {
+      "frame": 5,
+      "t_ms": 833
+    },
+    {
+      "frame": 6,
+      "t_ms": 1000
+    },
+    {
+      "frame": 7,
+      "t_ms": 1167
+    },
+    {
+      "frame": 8,
+      "t_ms": 1333
+    },
+    {
+      "frame": 9,
+      "t_ms": 1500
+    },
+    {
+      "frame": 10,
+      "t_ms": 1667
+    },
+    {
+      "frame": 11,
+      "t_ms": 1833
+    }
+  ]
+}

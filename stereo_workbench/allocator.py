@@ -59,7 +59,7 @@ def _equal_allocate(models, quota):
     return q, sizes, mses
 
 
-def greedy_single_eye(models, quota, allow=None, difficulty=None):
+def greedy_single_eye(models, quota, allow=None, difficulty=None, init_q=None):
     """单眼在给定额度内按 RD 边际性价比贪心升级。
 
     性价比 = MSE 下降 / 增加字节，本质上由局部困难程度决定：
@@ -67,13 +67,16 @@ def greedy_single_eye(models, quota, allow=None, difficulty=None):
     difficulty 可选，用于边际比并列时按局部困难程度稳定排序。
     allow(r, c, new_mse) 可选回调，返回 False 时拒绝该格点升级，
     用于注入双眼对应失真差约束。
+    init_q 可选，给定每格点的起始质量（如联合配对托底），默认最低档。
     """
-    q = np.full((C.ROWS, C.COLS), MIN_Q, dtype=np.int64)
+    if init_q is None:
+        init_q = np.full((C.ROWS, C.COLS), MIN_Q, dtype=np.int64)
+    q = init_q.astype(np.int64).copy()
     sizes = np.zeros((C.ROWS, C.COLS))
     mses = np.zeros((C.ROWS, C.COLS))
     for r in range(C.ROWS):
         for c in range(C.COLS):
-            sizes[r, c], mses[r, c] = _lookup(models[r][c], MIN_Q)
+            sizes[r, c], mses[r, c] = _lookup(models[r][c], q[r, c])
     spent = float(sizes.sum())
     while True:
         best = None

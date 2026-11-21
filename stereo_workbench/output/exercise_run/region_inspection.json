@@ -1,0 +1,57 @@
+{
+  "region": {
+    "frame": 7,
+    "eye": 1,
+    "x0": 95,
+    "y0": 148,
+    "x1": 115,
+    "y1": 168
+  },
+  "profiles": {
+    "starve_swapA": {
+      "region_mse": 109.57,
+      "region_bytes": 425
+    },
+    "starve_swapB": {
+      "region_mse": 87.797,
+      "region_bytes": 434
+    },
+    "generous": {
+      "region_mse": 15.643,
+      "region_bytes": 553
+    }
+  },
+  "annotations": [
+    {
+      "id": "micro",
+      "geo_visible_ratio": 1.0,
+      "stamped_in_eye": true,
+      "scores": {
+        "generous": 0.923,
+        "starve_swapA": 0.885,
+        "starve_swapB": 0.885
+      }
+    },
+    {
+      "id": "soft",
+      "geo_visible_ratio": 1.0,
+      "stamped_in_eye": true,
+      "scores": {
+        "generous": 0.729,
+        "starve_swapA": 0.449,
+        "starve_swapB": 0.449
+      }
+    },
+    {
+      "id": "rtex",
+      "geo_visible_ratio": 1.0,
+      "stamped_in_eye": true,
+      "scores": {
+        "generous": 0.492,
+        "starve_swapA": 0.051,
+        "starve_swapB": 0.072
+      }
+    }
+  ],
+  "verdict": "两档误差差异显著（swapA 更差）：误差随预算对调移动，属于分配不当而非天然遮挡"
+}
